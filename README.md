@@ -1,1 +1,1 @@
-# CrystalCollector
+# BasicLandCollector
