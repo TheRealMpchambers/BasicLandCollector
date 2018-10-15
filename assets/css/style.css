@@ -1,20 +1,21 @@
 body {
-    background-image: url(../images/rockywall.png);
-}
-
-.jumbotron {
-    background-color: brown;
+    background: url(../images/rockywall.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: lightgray
 }
 
 .display-4 {
     margin: auto;
     text-align: center;
     font-family: fantasy;
-    color: #fff;
+    overflow: hidden;
+    background: none;
 }
 
 .main {
-    background-color: #fff;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding: 20px;
     margin: 0px 0px 20px 0px;
@@ -25,6 +26,7 @@ body {
     color: #fff;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding: 20px;
+    margin: 0px 0px 0px 20px;
 }
 
 #win-losses{
@@ -35,14 +37,14 @@ body {
     margin: 0px 0px 0px 20px;
 }
 
-.gems{
+.land{
     padding: 10px;
     margin: 10px;
     border: solid #3d3d3d 2px;
     border-radius: 2px;
 }
 
-.gemsOne {
+.landOne {
     padding: 10px;
     margin: 10px 10px 0px 0px;
     border: solid #3d3d3d 2px;
@@ -54,5 +56,5 @@ body {
     color: #fff;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding: 20px;
-    width: 100%;
+    margin: 0px 0px 0px 20px;
 }

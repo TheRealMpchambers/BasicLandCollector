@@ -7,10 +7,10 @@ $(document).ready(function() {
     // console.log(computerNumber)
     $("#computerGuess").html("<p>" + "Points to get: " + "</p>" + computerNumber);
 
-    var gemOne = Math.floor(Math.random() * 11 + 1);
-    var gemTwo = Math.floor(Math.random() * 11 + 1);
-    var gemThree = Math.floor(Math.random() * 11 + 1);
-    var gemFour = Math.floor(Math.random() * 11 + 1);
+    var landOne = Math.floor(Math.random() * 11 + 1);
+    var landTwo = Math.floor(Math.random() * 11 + 1);
+    var landThree = Math.floor(Math.random() * 11 + 1);
+    var landFour = Math.floor(Math.random() * 11 + 1);
     var score= 0; 
     var wins= 0;
     var losses = 0;
@@ -36,16 +36,16 @@ $(document).ready(function() {
     function reset() {
         computerNumber = Math.floor(Math.random() * (120 - 19) + 19);
         $("#computerGuess").html("<p>" + "Points to get: " + "</p>" + computerNumber);
-        gemOne = Math.floor(Math.random() * 11 + 1);
-        gemTwo = Math.floor(Math.random() * 11 + 1);
-        gemThree = Math.floor(Math.random() * 11 + 1);
-        gemFour = Math.floor(Math.random() * 11 + 1);
+        landOne = Math.floor(Math.random() * 11 + 1);
+        landTwo = Math.floor(Math.random() * 11 + 1);
+        landThree = Math.floor(Math.random() * 11 + 1);
+        landFour = Math.floor(Math.random() * 11 + 1);
         score = 0;
         $("#scorebox").html("<p>" + "Your points: " + score + "</p>");
     }
 
-    $("#gemOne").click(function() {
-        score = score + gemOne;
+    $("#landOne").click(function() {
+        score = score + landOne;
         $("#scorebox").html("<p>" + "Your points: " + score + "</p>");
         if (score === computerNumber) {
             win();
@@ -54,8 +54,8 @@ $(document).ready(function() {
         }
     })
     
-    $("#gemTwo").click(function() {
-        score = score + gemTwo;
+    $("#landTwo").click(function() {
+        score = score + landTwo;
         $("#scorebox").html("<p>" + "Your points: " + score + "</p>");
         if (score === computerNumber) {
             win();
@@ -64,8 +64,8 @@ $(document).ready(function() {
         }
     })
 
-    $("#gemThree").click(function() {
-        score = score + gemThree;
+    $("#landThree").click(function() {
+        score = score + landThree;
         $("#scorebox").html("<p>" + "Your points: " + score + "</p>");
         if (score === computerNumber) {
             win();
@@ -74,8 +74,8 @@ $(document).ready(function() {
         }
     })
 
-    $("#gemFour").click(function() {
-        score = score + gemFour;
+    $("#landFour").click(function() {
+        score = score + landFour;
         $("#scorebox").html("<p>" + "Your points: " + score + "</p>");
         if (score === computerNumber) {
             win();
