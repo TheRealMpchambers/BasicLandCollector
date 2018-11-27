@@ -4,9 +4,14 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    color: lightgray
+    color:lightgray
 }
 
+.jumbotron {
+    background: none !important;
+    color: white;
+    
+}
 .display-4 {
     margin: auto;
     text-align: center;
@@ -19,6 +24,7 @@ body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding: 20px;
     margin: 0px 0px 20px 0px;
+    color: ghostwhite;
 }
 
 #computerGuess{
